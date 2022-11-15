@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+.container {
+	border: 5px solid lightgray;
+	border-radius: 10px;
+	width: 800px;
+	height: 800px;
+}
+
+.center {
+	background: gray;
+	color: white;
+	padding: 1rem;
+	width: max-content;
+		/*
+		`width`に指定したキーワード`max-content`は内容の幅を示す。
+		https://developer.mozilla.org/ja/docs/Web/CSS/max-content
+		*/
+}

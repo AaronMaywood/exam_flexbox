@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+.container div {
+	border: 5px solid lightgray;
+	border-radius: 10px;
+	background: gray;
+	color: white;
+}

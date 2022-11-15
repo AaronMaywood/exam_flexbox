@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+ul {
+	border: 5px solid lightblue;
+	border-radius: 10px;
+	width: 400px;
+	height: 400px;
+	padding: 0;
+	list-style: none;
+}
+
+ul li {
+	border: 5px solid lightgray;
+	border-radius: 10px;
+	background: gray;
+	color: white;
+	padding: 1rem;
+	width: max-content;
+}
+
+/*
+虹色を作るために色指定に`hsl()`を使用している
+https://developer.mozilla.org/ja/docs/Web/CSS/color_value#hsl_%E8%89%B2
+
+hsl()ではグラフィックツールで色を選択する際に扱う色相(H)、彩度(S)、明度(L)の３要素を指定できる。
+hsl方式は光の三原色であるRGB方式と比較し、直感的に色作りができる。
+虹色を作るには彩度と明度を明るめに固定し、色相だけを変える。
+色相は360°で表現するため、0-359の間の値として指定する。
+*/
+ul li:nth-child(1) { border-color: hsl(  0,100%,85%); }
+ul li:nth-child(2) { border-color: hsl( 40,100%,85%); }
+ul li:nth-child(3) { border-color: hsl( 80,100%,85%); }
+ul li:nth-child(4) { border-color: hsl(120,100%,85%); }
+ul li:nth-child(5) { border-color: hsl(160,100%,85%); }
+ul li:nth-child(6) { border-color: hsl(200,100%,85%); }
+ul li:nth-child(7) { border-color: hsl(240,100%,85%); }
+ul li:nth-child(8) { border-color: hsl(280,100%,85%); }
+
