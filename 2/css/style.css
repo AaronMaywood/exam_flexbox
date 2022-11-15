@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.container {
+	/* 答え */
+	display:flex;
+}
+
+.container div {
+	border: 5px solid lightgray;
+	border-radius: 10px;
+	background: gray;
+	color: white;
+
+	/* 答え */
+	flex: 1;
+}
